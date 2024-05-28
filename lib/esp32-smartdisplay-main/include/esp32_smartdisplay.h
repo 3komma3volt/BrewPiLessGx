@@ -172,6 +172,24 @@ extern SPIClass spi_ili9431;
 extern TwoWire i2c_gt911;
 #endif
 
+// ESP32_2432S032C using ESPI_TFT library
+#ifdef ESP32_2432S032C_ESPI
+#define TFT_MISO 12
+#define TFT_MOSI 13
+#define TFT_SCLK 14 
+#define TFT_CS 15
+#define TFT_DC 2 
+#define TFT_RST -1 
+#define TFT_BL 21
+
+#define XPT2046_IRQ 36
+#define XPT2046_MOSI 32
+#define XPT2046_MISO 39
+#define XPT2046_CLK 25
+#define XPT2046_CS 33
+
+#endif
+
 
 // ESP32_3248S035R
 #ifdef ESP32_3248S035R

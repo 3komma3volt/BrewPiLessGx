@@ -105,7 +105,9 @@ void screenSaver_create(lv_obj_t *parent){
 
 void delay_sleep(void *timer){
 	(void) timer;
+    #ifndef ESP32_2432S032C_ESPI
 	display_drv_sleep();
+    #endif
 }
 
 void periodic_timer_handler(lv_timer_t *timer){
@@ -169,7 +171,9 @@ void onScreenSaverClicked(lv_event_t * e){
 
 void screenWakeup(void){
     if(_screenState == ScreenSavingSleep){
+        #ifndef ESP32_2432S032C_ESPI
         display_drv_wakeup();
+        #endif
 //        delay(10);
         isTftSleeping=false;
     }else{

@@ -11,7 +11,7 @@
 #define actuatorPin6  17
 #endif
 
-#if ESP32_2432S032C
+#if ESP32_2432S032C || ESP32_2432S032C_ESPI
 #define oneWirePin    22
 #define PressureAdcPin  35
 #define actuatorPin1  21

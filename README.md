@@ -1,5 +1,7 @@
 # BrewPiLessGx
 
+This fork uses Bodmer's ESPI_TFT and TFT_Touch library, since the original implementation of the TFT driver didn't work with my 2432S032C.
+
 BrewPiLessGx is [BrewPiLess](https://github.com/vitotai/BrewPiLess) running on ESP32_2432S032C, which is a ESP32 with a touch enabled TFT. Built on top of [lvgl](https://lvgl.io), flexbile display and touch based GUI are implemented.
 
 The main display is defined by [JSON format](doc/skin.md). There is a developing [tool](https://www.vito.tw/BrewPiLessGx/extra/SkinEditor) to help compiling the JSON file.
